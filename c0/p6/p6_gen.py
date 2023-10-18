@@ -2,7 +2,7 @@ from testcase_generator import BoundedConstraint, Case, Batch, Generator
 
 def set_constraints(self):
     self.N = BoundedConstraint(2, 100000)
-    self.Q = BoundedConstraint(1, 1000000)
+    self.Q = BoundedConstraint(1, 100000)
     self.C = BoundedConstraint(1, 1000)
     self.P = BoundedConstraint(1, 1000)
 

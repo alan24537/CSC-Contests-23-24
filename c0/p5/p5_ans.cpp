@@ -1,56 +1,31 @@
 #include <bits/stdc++.h>
+#define psi pair<string, int>
+#define fi first
+#define se second
 using namespace std;
 
-const string jp1[] = {"a", "i", "u", "e", "o", "n"};
+const int MAXSZ = 1005;
 
-const string jp2[] = {
-    "ka", "ki", "ku", "ke", "ko",
-    "sa", "su", "se", "so",
-    "ta", "te", "to",
-    "na", "ni", "nu", "ne", "no",
-    "ha", "hi", "fu", "he", "ho",
-    "ma", "mi", "mu", "me", "mo",
-    "ya", "yu", "yo",
-    "ra", "ri", "ru", "re", "ro",
-    "wa", "wo"
-};
-
-const string jp3[] = {"shi","chi", "tsu"};
-
-string s;
+int n, q;
+psi shops[MAXSZ];
 
 signed main() {
     ios_base::sync_with_stdio(0);cin.tie(0);
 
-    cin >> s;
-    for (int i = 0, matched = false; i < s.length();) {
-        matched = false;
-        for (string c3 : jp3) {
-            if (i + 2 < s.length() && s[i] == c3[0] && s[i + 1] == c3[1] && s[i + 2] == c3[2]) {
-                i += 3;
-                matched = true;
-                break;
-            }
-        }
-        if (matched) continue;
-        for (string c2 : jp2) {
-            if (i + 1 < s.length() && s[i] == c2[0] && s[i + 1] == c2[1]) {
-                i += 2;
-                matched = true;
-                break;
-            }
-        }
-        if (matched) continue;
-        for (string c1 : jp1) {
-            if (s[i] == c1[0]) {
-                i += 1;
-                matched = true;
-                break;
-            }
-        }
-        if (!matched) {cout << "no"; return 0;}
+    cin >> n >> q;
+    for (int i = 0; i < n; i ++) {
+        cin >> shops[i].fi >> shops[i].se;
     }
-    cout << "yes";
 
+    for (int i = 0, x; i < q; i ++) {
+        cin >> x;
+        psi ans = {"", 1e9};
+        for (int j = 0; j < n; j ++) {
+            if (abs(shops[j].se - x) < ans.se) {
+                ans = {shops[j].fi, abs(shops[j].se - x)};
+            }
+        }
+        cout << ans.fi << '\n';
+    }
     return 0;
 }
