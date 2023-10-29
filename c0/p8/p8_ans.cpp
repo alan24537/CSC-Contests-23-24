@@ -8,7 +8,7 @@ const int MAXSZ = 100005;
 
 int n, q;
 pii claw[MAXSZ];
-int suf[MAXSZ];
+int pma[MAXSZ];
 
 signed main() {
     ios_base::sync_with_stdio(0);cin.tie(0);
@@ -19,9 +19,9 @@ signed main() {
     }
     sort(claw, claw + n);
 
-    suf[0] = claw[0].se;
+    pma[0] = claw[0].se;
     for (int i = 1; i < n; i ++) {
-        suf[i] = max(suf[i - 1], claw[i].se);
+        pma[i] = max(pma[i - 1], claw[i].se);
     }
 
     for (int i = 0, d; i < q; i ++) {
@@ -32,7 +32,7 @@ signed main() {
             if (claw[mid].fi <= d) {lo = mid + 1; idx = max(mid, idx);}
             else hi = mid - 1;
         }
-        cout << suf[idx] << "\n";
+        cout << pma[idx] << "\n";
     }
 
     return 0;

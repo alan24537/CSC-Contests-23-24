@@ -1,9 +1,9 @@
 n = int(input())
 d = int(input())
-
+ans = 0
 for i in range(n):
     c = int(input())
-    if d - c < 0:
-        print(i)
-        d = 1e9
     d -= c
+    if d >= 0:
+        ans += 1
+print(ans)

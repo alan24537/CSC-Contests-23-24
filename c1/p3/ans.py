@@ -1,0 +1,1 @@
+print("no" if input() in ["miso", "hakuto", "ringo", "paula", "sprite"] else "yes")

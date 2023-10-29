@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #define psi pair<string, int>
 #define fi first
 #define se second
@@ -21,8 +21,8 @@ signed main() {
         cin >> x;
         psi ans = {"", 1e9};
         for (int j = 0; j < n; j ++) {
-            if (abs(shops[j].se - x) < ans.se) {
-                ans = {shops[j].fi, abs(shops[j].se - x)};
+            if (abs(shops[j].se - x) < abs(ans.se - x)) {
+                ans = shops[j];
             }
         }
         cout << ans.fi << '\n';
