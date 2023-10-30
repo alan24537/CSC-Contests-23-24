@@ -1,7 +1,6 @@
 # Problem 5: Catnip Feeding
 
 **Time Limit:** 1s
-**Memory Limit:** 128MB
 
 While talking to your other cat friends, you hear about this *cat drug* called catnip. You decide to try it out and buy $N$ pieces of catnip, each of which has a strength $S_i$. Since you don't want your cat to become desensitized to catnip, you decide to only feed your cat the second strongest piece of catnip. However, Jacob doesn't want to go through the trouble of finding the second strongest piece of catnip, so he asks you to write a program to do it for him. The catnip dealer guarantees that there is always at least two pieces of catnip with different strengths.
 

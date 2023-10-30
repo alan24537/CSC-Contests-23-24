@@ -1,8 +1,6 @@
-
 # Problem 1: Cat Shopping
 
 **Time Limit:** 1s
-**Memory Limit:** 128MB
 
 Jacob, feeling a bit lonely, decides to buy a cat. He goes to the pet store and finds a cat that he likes. The cat costs $C$ dollars. Jacob has $D$ dollars. Can he afford the cat?
 

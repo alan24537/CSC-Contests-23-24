@@ -1,7 +1,6 @@
 # Problem 7: Litter Box Placing
 
 **Time Limit:** 1s
-**Memory Limit:** 128MB
 
 Jacob is trying to figure out where to place his litter box in the optimal spot. At the same time, he also needs to put the food and water bowls somewhere. He read online that you should try and place the litter box as far away from the food and water bowls as possible. Jacob has managed to model his house as a 2D plane and has $N$ possible locations for the litter box, $(L_x, L_y)$, and $M$ possible locations for the food and water bowls $(F_x, F_y)$. He wants to know where to place the litter box and food and water bowls such that the distance between the litter box and food and water bowl is maximized.
 

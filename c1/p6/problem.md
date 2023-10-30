@@ -1,7 +1,6 @@
 # Problem 6: Mixing up Cat Food
 
 **Time Limit:** 1s
-**Memory Limit:** 128MB
 
 Jacob feels like his cat shouldn't only each 1 type of food. He wants to mix up the food a bit. He can buy $N$ cat food bags, each has $G_i$ grams of food. However, after some number of days, Jacob doesn't want leftover food. Given that Jacob's cat eats $K$ grams of food a day, find the number of pair of bags $(G_i, G_j)$ such that $i < j$ and $G_i + G_j$ is divisible by $K$?
 

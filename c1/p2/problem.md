@@ -1,8 +1,6 @@
-
 # Problem 2: Cat Food
 
 **Time Limit:** 1s
-**Memory Limit:** 128MB
 
 Now that Jacob has a cat, he needs to buy cat food. He finds out that his cat needs $N$ grams of food every day. If Jacob buys $X$ grams of food, how many days will it last?
 
