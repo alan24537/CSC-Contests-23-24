@@ -12,7 +12,7 @@ signed main() {
         odd += x % 2 == 1;
         even += x % 2 == 0;
     }
-    cout << (odd == even ? "yes" : "no");
+    cout << (odd == even ? "meow" :"...");
 
     return 0;
 }

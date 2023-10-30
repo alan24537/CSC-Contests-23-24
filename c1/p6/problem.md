@@ -1,23 +1,23 @@
-# Problem 6:
+# Problem 6: Mixing up Cat Food
 
 **Time Limit:** 1s
 **Memory Limit:** 128MB
 
-Given a list of $N$ numbers, $A_i$, find the number of pairs of numbers $(A_i, A_j)$ such that $i < j$ and $A_i + A_j$ is divisible by $K$.
+Jacob feels like his cat shouldn't only each 1 type of food. He wants to mix up the food a bit. He can buy $N$ cat food bags, each has $G_i$ grams of food. However, after some number of days, Jacob doesn't want leftover food. Given that Jacob's cat eats $K$ grams of food a day, find the number of pair of bags $(G_i, G_j)$ such that $i < j$ and $G_i + G_j$ is divisible by $K$?
 
 ## Constraints
 
 $2 \leq N \leq 10^3$
 $1 \leq K \leq 10^9$
-$1 \leq A_i \leq 10^9$
+$1 \leq G_i \leq 10^9$
 
 ## Input Specification
 
-The first line will contain 2 space separated integers $N$ and $K$. The next line will contain $N$ space separated integers $A_i$.
+The first line will contain 2 space separated integers $N$ and $K$. The next line will contain $N$ space separated integers $G_i$.
 
 ## Output Specification
 
-Output the number of pairs of numbers $(A_i, A_j)$ such that $i < j$ and $A_i + A_j$ is divisible by $K$.
+Output the number of pairs of numbers $(G_i, G_j)$ such that $i < j$ and $G_i + G_j$ is divisible by $K$.
 
 ## Sample Input
 
