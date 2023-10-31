@@ -1,16 +1,3 @@
-n, m = map(int, input().split())
-litter = [list(map(int, input().split())) for _ in range(n)]
-food = [list(map(int, input().split())) for _ in range(m)]
-
-def dist(x: tuple, y: tuple) -> float:
-    return ((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2) ** 0.5
-    
-ans_dist = -1
-lans, fans = (0, 0), (0, 0)
-for i in range(n):
-    for j in range(m):
-        if dist(litter[i], food[j]) > ans_dist:
-            ans_dist = dist(litter[i], food[j])
-            lans, fans = litter[i], food[j]
-print(*lans)
-print(*fans)
+import sys
+input = sys.stdin.readline
+print((lambda n, m, litter, food: (lambda dist_list: (lambda max_dist: f"{max_dist[1][0]} {max_dist[1][1]}\n{max_dist[2][0]} {max_dist[2][1]}")(max(dist_list)))([[(((litter[i][0] - food[j][0]) ** 2 + (litter[i][1] - food[j][1]) ** 2) ** 0.5), litter[i], food[j]] for i in range(n) for j in range(m)])) (*(lambda n, m: ([n, m, [list(map(int, input().split())) for _ in range(n)], [list(map(int, input().split())) for _ in range(m)]]))(*map(int, input().split()))))
