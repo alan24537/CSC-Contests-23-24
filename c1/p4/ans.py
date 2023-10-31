@@ -1,0 +1,1 @@
+print((lambda n: "meow" if sum(1 for _ in range(n) if int(input()) % 2 == 0) == n // 2 else "...")(int(input())))

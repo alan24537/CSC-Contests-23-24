@@ -87,8 +87,8 @@ def rename_file(file_path, new_name):
 # move_file("c:/Users/jacob/Documents/GitHub/CSC-23-24/c1/p1/cases/batch1/0.in", CURR_DIR)
         
 CONTEST = 'c1'
-NUM_PROBLEMS = 8
-PROBLEMS = [8, 9]
+NUM_PROBLEMS = 9
+PROBLEMS = [8]
         
 for i in PROBLEMS:
     create_dir(f"{CURR_DIR}\\{CONTEST}\\p{i}\\data\\secret")

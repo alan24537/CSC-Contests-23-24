@@ -2,10 +2,10 @@ from testcase_generator import BoundedConstraint, Case, Batch, Generator
 import random
 
 def set_constraints(self):
-    self.N = BoundedConstraint(1, 10**6)
+    self.N = BoundedConstraint(1, 10**5)
     self.K = BoundedConstraint(1, 10**9)
     self.A_i = BoundedConstraint(1, 10**9)
-    self.min_ans = BoundedConstraint(1, 10**6)
+    self.min_ans = BoundedConstraint(1, 10**5)
     
 def generate_input(self, **kwargs):
     n = self.N.next
@@ -24,7 +24,7 @@ Case.SET_INPUT = generate_input
 
 batches = [
     Batch(num=1, cases=[Case() for i in range(4)]),
-    Batch(num=2, cases=[Case(N=BoundedConstraint(10**6, 10**6), K=BoundedConstraint(1, 1)) for i in range(1)]),
+    Batch(num=2, cases=[Case(N=BoundedConstraint(10**5, 10**5), K=BoundedConstraint(1, 1)) for i in range(1)]),
 ]
 
 Generator(batches=batches, exe='ans.exe').start()

@@ -1,3 +1,1 @@
-c = int(input())
-d = int(input())
-print("yes" if c <= d else "no")
+print("yes" if int(input()) <= int(input()) else "no")

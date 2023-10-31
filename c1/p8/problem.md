@@ -8,7 +8,7 @@ Jacob feels like his cat shouldn't only each 1 type of food. He wants to mix up 
 
 Note the constraints are different from the original problem and you may need fast input for this problem.
 
-$2 \leq N \leq 10^6$
+$2 \leq N \leq 10^5$
 $1 \leq K \leq 10^9$
 $1 \leq G_i \leq 10^9$
 
