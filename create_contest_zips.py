@@ -88,7 +88,7 @@ def rename_file(file_path, new_name):
         
 CONTEST = 'c1'
 NUM_PROBLEMS = 8
-PROBLEMS = [2, 3]
+PROBLEMS = [5]
         
 for i in PROBLEMS:
     create_dir(f"{CURR_DIR}\\{CONTEST}\\p{i}\\data\\secret")

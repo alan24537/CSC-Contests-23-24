@@ -2,7 +2,7 @@
 
 **Time Limit:** 1s
 
-While talking to your other cat friends, you hear about this *cat drug* called catnip. You decide to try it out and buy $N$ pieces of catnip, each of which has a strength $S_i$. Since you don't want your cat to become desensitized to catnip, you decide to only feed your cat the second strongest piece of catnip. However, Jacob doesn't want to go through the trouble of finding the second strongest piece of catnip, so he asks you to write a program to do it for him. The catnip dealer guarantees that there is always at least two pieces of catnip with different strengths.
+While talking to your other cat friends, you hear about this *cat drug* called catnip. You decide to try it out and buy $N$ pieces of catnip, each of which has a strength $S_i$. Since you don't want your cat to become desensitized to catnip, you decide to only feed your cat the piece of catnip that has the second strongest strength. However, Jacob doesn't want to go through the trouble of finding the piece of catnip that has the second strongest strength, so he asks you to write a program to do it for him.
 
 ## Constraints
 
@@ -15,7 +15,7 @@ The first line will contain the integer $N$. The next $N$ lines will contain the
 
 ## Output Specification
 
-Output the second strongest piece of catnip.
+Output the piece of catnip that has the second strongest strength or `-1` if there is no piece of catnip that has the second strongest strength.
 
 ## Sample Input
 

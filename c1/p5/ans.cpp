@@ -18,9 +18,10 @@ signed main() {
     for (int i = 0; i < n; i ++) {
         if (arr[i] != arr[0]) {
             cout << arr[i];
-            break;
+            return 0;
         }
     }
+    cout << -1;
 
     return 0;
 }
