@@ -2,7 +2,7 @@
 
 **Time Limit:** 1s
 
-Jacob, being the math enthusiast he is, is trying to train his cat to surpass the  might Dorthy Zheng. Currently, he is working on counting and even and odd numbers. For the training, he puts a list of $N$ piles, each of which have $X_i$ treats in them. He want the cat to meow if the number of piles with an even number of treats is equal to the number of piles with an odd number of treats.
+Jacob, being the math enthusiast he is, is trying to train his cat to surpass the  might Dorothy Zheng. Currently, he is working on counting and even and odd numbers. For the training, he puts a list of $N$ piles, each of which have $X_i$ treats in them. He want the cat to meow if the number of piles with an even number of treats is equal to the number of piles with an odd number of treats.
 
 ## Constraints
 
