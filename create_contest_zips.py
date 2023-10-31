@@ -2,10 +2,6 @@ import os
 import zipfile
 import shutil
 
-CONTEST = 'c1'
-NUM_PROBLEMS = 8
-PROBLEMS = [3]
-
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 
 print(f"Current directory: {CURR_DIR}")
@@ -90,17 +86,20 @@ def rename_file(file_path, new_name):
         
 # move_file("c:/Users/jacob/Documents/GitHub/CSC-23-24/c1/p1/cases/batch1/0.in", CURR_DIR)
         
+CONTEST = 'c1'
+NUM_PROBLEMS = 8
+PROBLEMS = [2, 3]
+        
 for i in PROBLEMS:
     create_dir(f"{CURR_DIR}\\{CONTEST}\\p{i}\\data\\secret")
     test_case = 0
-    for dir in list_dirs_in_dir(f"{CURR_DIR}\\{CONTEST}\\p{i}\\cases"):
+    cases_dir_list = list_dirs_in_dir(f"{CURR_DIR}\\{CONTEST}\\p{i}\\cases")
+    for dir in (cases_dir_list if cases_dir_list is not None else []):
         print(dir)
         for j, file in enumerate(list_files_in_dir(dir)):
             print(file)
             new_file_name = f"{test_case // 2}.in" if file.endswith(".in") else f"{test_case // 2}.ans"  
-            print(f"Renaming {file} to {new_file_name}")
             rename_file(file, new_file_name)
-            print(f"Moving {dir}\\{new_file_name} to {CURR_DIR}\\{CONTEST}\\p{i}\\data\\secret\\")
             move_file(f"{dir}\\{new_file_name}", f"{CURR_DIR}\\{CONTEST}\\p{i}\\data\\secret\\")
             
             test_case += 1

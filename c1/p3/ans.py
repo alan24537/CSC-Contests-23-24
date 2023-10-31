@@ -1,1 +1,1 @@
-print("no" if input() in ["miso", "hakuto", "ringo", "paula", "sprite"] else "yes")
+print((lambda n, x: (x // n) + (x % n != 0))(int(input()), int(input())))

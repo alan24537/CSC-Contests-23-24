@@ -1,31 +1,31 @@
-# Problem 2: Cat Food
+# Problem 2: Cat Naming
 
 **Time Limit:** 1s
 
-Now that Jacob has a cat, he needs to buy cat food. He finds out that his cat needs $N$ grams of food every day. If Jacob buys $X$ grams of food, how many days will it last?
+Jacob needs a name for his cat. However, Jacob is horrible at coming up with names and decides to have his best friend, chatGPT choose if for him. However, a lot of Jacob's friends have cats and he doesn't want to name his cat the same thing as one of his friends' cats. Jacob knows 5 cats: `miso`, `hakuto`, `ringo`, `paula`, `sprite`. Given the name that chatGPT chooses, $S$, determine if Jacob can use that name for his cat.  
 
 ## Constraints
 
-$1 \leq N \leq 10^3$
-$1 \leq X \leq 10^4$
+$1 \leq |S| \leq 10^2$
+
+The string $S$ will only contain lowercase letters.
 
 ## Input Specification
 
-The first line will contain the integer $N$, the amount of food the cat needs per day. The second line will contain the integer $X$, the amount of food Jacob buys.
+The first and only line will contain the name that chatGPT chooses for Jacob's cat, $S$.
 
 ## Output Specification
 
-Output the number of days that the food will last.
+Output `yes` if Jacob can use the name and `no` otherwise.
 
 ## Sample Input
 
 ```txt
-5
-14
+tofu
 ```
 
 ## Sample Output
 
 ```txt
-2
+yes
 ```
