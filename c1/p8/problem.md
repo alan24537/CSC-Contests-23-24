@@ -1,4 +1,4 @@
-# Problem 6 (Hard): Mixing up Cat Food
+# Problem 8: Mixing up Cat Food (Hard)
 
 **Time Limit:** 1s
 

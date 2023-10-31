@@ -1,4 +1,4 @@
-# Problem 8: Finding the Cat
+# Problem 9: Finding the Cat
 
 **Time Limit:** 1s
 
