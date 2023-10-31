@@ -1,20 +1,28 @@
 #include <bits/stdc++.h>
-#define pii pair<int, int>
-#define fi first
-#define se second
 using namespace std;
 
-double tri_area(pii A, pii B, pii C) {
-    return abs((A.fi*B.se + B.fi*C.se + C.fi*A.se) - (A.se*B.fi + B.se*C.fi + C.se*A.fi)) / 2.0;
-}
+const int MAXSZ = 1e6 + 5;
 
-pii a, b, c, p;
+int n, k;
+unsigned long long ans;
+int arr[MAXSZ];
+map<int, int> freq;
 
 signed main() {
     ios_base::sync_with_stdio(0);cin.tie(0);
 
-    cin >> a.fi >> a.se >> b.fi >> b.se >> c.fi >> c.se >> p.fi >> p.se;
-    cout << (tri_area(a, b, p) + tri_area(b, c, p) + tri_area(c, a, p) == tri_area(a, b, c) ? "yes" : "no"); 
+    cin >> n >> k;
+    for (int i = 0; i < n; i ++) {
+        cin >> arr[i];
+        arr[i] %= k;
+        if (freq.find(arr[i]) == freq.end()) freq[arr[i]] = 1;
+        else freq[arr[i]] ++;
+    }
+    for (int i = 0; i < n; i ++) {
+        if (freq.find(k - arr[i]) != freq.end()) ans += freq[k - arr[i]];
+        if (freq.find(0) != freq.end()) ans += freq[0] - (arr[i] == 0);
+    }
+    cout << ans / 2;
 
     return 0;
 }

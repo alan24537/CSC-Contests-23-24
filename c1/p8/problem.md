@@ -1,38 +1,38 @@
-# Problem 8: Finding the Cat
+# Problem 6 (Hard): Mixing up Cat Food
 
 **Time Limit:** 1s
 
-Jacob loves his new cat very much. As such, he want to make sure that his cat stays inside of his house. Jacob's house is a bit peculiar, as it is shaped like a triangle and can be models with a 2D plane. He attached a GPS tracker to his cat, and he wants to know if his cat is inside of his house. Given the coordinates of the three vertices of Jacob's house $(A_x, A_y), (B_x, B_y), (C_x, C_y)$ and the coordinates of his cat, $(P_x, P_y)$ determine if his cat is inside of his house.
-
-**Hint:** You may need to use the area of a triangle to solve this problem. The area of triangle formed by the points $(A_x, A_y), (B_x, B_y), (C_x, C_y)$ is given by the following formula:
-
-$AREA = \frac{1}{2} \left| (A_x B_y + B_x C_y + C_x A_y) - (A_y B_x + B_y C_x + C_y A_x) \right|$
+Jacob feels like his cat shouldn't only each 1 type of food. He wants to mix up the food a bit. He can buy $N$ cat food bags, each has $G_i$ grams of food. However, after some number of days, Jacob doesn't want leftover food. Given that Jacob's cat eats $K$ grams of food a day, find the number of pair of bags $(G_i, G_j)$ such that $i < j$ and $G_i + G_j$ is divisible by $K$?
 
 ## Constraints
 
-$-10^3 \leq A_x, A_y, B_x, B_y, C_x, C_y, P_x, P_y \leq 10^3$
+Note the constraints are different from the original problem and you may need fast input for this problem.
+
+$2 \leq N \leq 10^6$
+$1 \leq K \leq 10^9$
+$1 \leq G_i \leq 10^9$
 
 ## Input Specification
 
-The first line of input will contain the coordinates of the three vertices of Jacob's house, $A_x, A_y, B_x, B_y, C_x, C_y$. The second line of input will contain the coordinates of Jacob's cat, $P_x, P_y$.
+The first line will contain 2 space separated integers $N$ and $K$. The next line will contain $N$ space separated integers $G_i$.
 
 ## Output Specification
 
-Output `yes` if Jacob's cat is inside of his house, and `no` otherwise.
+Output the number of pairs of numbers $(G_i, G_j)$ such that $i < j$ and $G_i + G_j$ is divisible by $K$.
 
 ## Sample Input
 
 ```txt
--3 4 5 2 -1 -1
-1 1
+6 5
+1 2 4 3 5 7
 ```
 
 ## Sample Output
 
 ```txt
-yes
+3
 ```
 
 ## Explanation
 
-<img src="https://cdn.discordapp.com/attachments/1091060345298235434/1168598342415171694/image.png?ex=65525904&is=653fe404&hm=42c36ec08a4d28f4212f54e5a51d98ac6ab1d0f26f8f7e01470cb700eab9c224&" width="300px">
+The pairs are $(1, 4), (2, 3), (3, 7)$.
