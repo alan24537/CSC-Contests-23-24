@@ -20,7 +20,7 @@ signed main() {
     }
     for (int i = 0; i < n; i ++) {
         if (freq.find(k - arr[i]) != freq.end()) ans += freq[k - arr[i]];
-        if (freq.find(0) != freq.end()) ans += freq[0] - (arr[i] == 0);
+        if (freq.find(0) != freq.end() && arr[i] == 0) ans += freq[0] - 1;
     }
     cout << ans / 2;
 

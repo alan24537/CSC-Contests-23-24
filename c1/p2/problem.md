@@ -2,7 +2,7 @@
 
 **Time Limit:** 1s
 
-Jacob needs a name for his cat. However, Jacob is horrible at coming up with names and decides to have his best friend, chatGPT choose if for him. However, a lot of Jacob's friends have cats and he doesn't want to name his cat the same thing as one of his friends' cats. Jacob knows 5 cats: `miso`, `hakuto`, `ringo`, `paula`, `sprite`. Given the name that chatGPT chooses, $S$, determine if Jacob can use that name for his cat.  
+Jacob needs a name for his cat. However, Jacob is horrible at coming up with names and decides to have his best friend, chatGPT choose if for him. However, a lot of Jacob's friends have cats and he doesn't want to name his cat the same thing as one of his friends' cats. His friends cats are named: `miso`, `hakuto`, `ringo`, `paula`, `sprite`. Given the name that chatGPT chooses, $S$, determine if Jacob can use that name for his cat.  
 
 ## Constraints
 

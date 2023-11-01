@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXSZ = 1e3 + 5;
+const int MAXSZ = 1e5 + 5;
 
 int n, k, ans;
 int arr[MAXSZ];
