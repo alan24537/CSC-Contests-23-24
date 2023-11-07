@@ -84,11 +84,23 @@ def rename_file(file_path, new_name):
     except FileNotFoundError:
         print(f"File '{file_path}' not found.")
         
-# move_file("c:/Users/jacob/Documents/GitHub/CSC-23-24/c1/p1/cases/batch1/0.in", CURR_DIR)
+def copy_file(source_path, destination_path):
+    try:
+        shutil.copy(source_path, destination_path)
+        print(f"Copied '{source_path}' to '{destination_path}'")
+    except FileNotFoundError:
+        print(f"File '{source_path}' not found.")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
         
 CONTEST = 'c1'
 NUM_PROBLEMS = 9
 PROBLEMS = [7]
+
+def collect_problem_statements():
+    create_dir(f"{CURR_DIR}\\{CONTEST}\\problem_statements")
+    for i in range(1, NUM_PROBLEMS + 1):
+        copy_file(f"{CURR_DIR}\\{CONTEST}\\p{i}\\problem.pdf", f"{CURR_DIR}\\{CONTEST}\\problem_statements\\p{i}.pdf")
         
 for i in PROBLEMS:
     create_dir(f"{CURR_DIR}\\{CONTEST}\\p{i}\\data\\secret")
