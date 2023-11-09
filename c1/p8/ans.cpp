@@ -15,10 +15,8 @@ signed main() {
     for (int i = 0; i < n; i ++) {
         cin >> arr[i];
         arr[i] %= k;
-        if (freq.find((k - arr[i]) % k) != freq.end()) ans += freq[(k - arr[i]) % k];
-        if (freq.find(arr[i]) == freq.end()) freq[arr[i]] = 1;
-        else freq[arr[i]] ++;
-        
+        ans += freq[(k - arr[i]) % k];
+        freq[arr[i]] ++;
     }
     cout << ans;
 
