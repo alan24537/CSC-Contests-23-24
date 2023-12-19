@@ -1,0 +1,1 @@
+print((lambda t, arr: sum([1 if arr[i] == '1' or arr[max(0, i - 1)] == '1' or arr[max(0, i - 2)] == '1' else 0 for i in range(t)]))(int(input()), input()))

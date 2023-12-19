@@ -1,0 +1,1 @@
+print((lambda r,c:"Alf"if(((r*c)-1)%2)else"Beata")(*map(int,input().split())))

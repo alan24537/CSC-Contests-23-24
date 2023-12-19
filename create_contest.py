@@ -1,7 +1,7 @@
 import os
 
-CONTEST = 'c1'
-NUM_PROBLEMS = 8
+CONTEST = 'a_christmas_contest'
+NUM_PROBLEMS = 5
 
 gen_template = '''
 from testcase_generator import BoundedConstraint, Case, Batch, Generator
@@ -25,8 +25,7 @@ Generator(batches=batches, exe='ans.exe').start()
 '''
 
 def problem_template(num):
-    return f'''
-# Problem {num}:
+    return f'''# Problem {num}:
 
 **Time Limit:** 1s
 **Memory Limit:** 128MB

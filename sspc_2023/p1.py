@@ -1,0 +1,1 @@
+print("\n".join((map(str, [(eval("*".join(map(str, range(1, int(input()) + 1)))) % 10) for i in range(int(input()))]))))

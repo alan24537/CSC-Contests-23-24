@@ -93,9 +93,9 @@ def copy_file(source_path, destination_path):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-CONTEST = 'c1'
-NUM_PROBLEMS = 9
-PROBLEMS = [7]
+CONTEST = 'a_christmas_contest'
+NUM_PROBLEMS = 5
+PROBLEMS = [1, 5]
 
 def collect_problem_statements():
     create_dir(f"{CURR_DIR}\\{CONTEST}\\problem_statements")
